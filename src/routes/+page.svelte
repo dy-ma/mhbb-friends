@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button/index';
 	import * as Accordion from '$lib/components/ui/accordion/index';
 	import temple from '$lib/images/temple.jpg';
-    import ArrowDown from 'lucide-svelte/icons/arrow-down';
+	import ArrowDown from 'lucide-svelte/icons/arrow-down';
 </script>
 
 <main class="mx-auto flex flex-col font-serif">
@@ -21,15 +21,18 @@
 			>
 		</div>
 
-		<Button variant="secondary" href="#details" class="font-semibold">Learn More<ArrowDown/></Button>
+		<Button variant="secondary" href="#details" class="font-semibold"
+			>Learn More<ArrowDown /></Button
+		>
 
 		<div id="details"></div>
 	</div>
 
-	<div class="max-w-3xl self-center">
+	<div class="max-w-3xl self-center px-4 pb-10">
 		<div class="pt-10">
 			<h1 class="mb-2 text-4xl">
-				Keiro Kai means <span class="rounded-sm bg-primary p-1 text-primary-foreground block sm:inline w-fit"
+				Keiro Kai means <span
+					class="block w-fit rounded-sm bg-primary p-1 text-primary-foreground sm:inline"
 					>Respect for the Aged</span
 				>
 			</h1>
@@ -61,8 +64,22 @@
 					awards and acknowledgements.
 				</li>
 			</ul>
+			<div class="mt-4 flex justify-center">
+				<div class="mx-1 h-48 w-full">
+					<div class="flex h-full w-full items-center justify-center rounded-md bg-secondary">
+						Image of Annex
+					</div>
+					<span class="flex justify-center">Annex Building</span>
+				</div>
+				<div class="mx-1 h-48 w-full">
+					<div class="flex h-full w-full items-center justify-center rounded-md bg-secondary">
+						Other helpful image
+					</div>
+					<span class="flex justify-center">Image Caption</span>
+				</div>
+			</div>
 		</div>
-        
+
 		<h1 id="directions" class="text-4xl">How to Attend</h1>
 		<Accordion.Root type="single" class="mb-6">
 			<Accordion.Item value="item-1">
@@ -100,5 +117,8 @@
 				></iframe>
 			</div>
 		</div>
+
+		<h1 class="mt-4 text-4xl">Contact Us</h1>
+		<p>For further questions, call us at <span>(555) 555-5555</span></p>
 	</div>
 </main>
