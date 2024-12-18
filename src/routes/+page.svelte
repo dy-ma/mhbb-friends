@@ -3,13 +3,19 @@
 	import * as Accordion from '$lib/components/ui/accordion/index';
 	import temple from '$lib/images/temple.jpg';
 	import ArrowDown from 'lucide-svelte/icons/arrow-down';
+	import logo from '$lib/images/logo-primary.svg';
+	import snake from '$lib/images/snake.png'
 </script>
 
 <main class="mx-auto flex flex-col font-serif">
-	<div class="mt-20 flex h-dvh flex-col items-center justify-between">
-		<div>
+	<div class="flex h-dvh flex-col items-center justify-between">
+		<div class="pt-6">
+			<div class="flex w-full items-center justify-center">
+				<a href="/"> <img src={logo} alt="Temple Logo" class="h-20 w-20 overflow-visible" /></a>
+			</div>
 			<h1 class="text-center text-6xl"><a href="/">Keiro Kai</a></h1>
 			<h2 class="text-center text-xl">Morgan Hill Buddhist Community Center</h2>
+			<h3 class="text-center text-lg">1/25/2025 | 12pm</h3>
 		</div>
 
 		<div class="flex w-full flex-col">
@@ -31,10 +37,7 @@
 	<div class="max-w-3xl self-center px-4 pb-10">
 		<div class="pt-10">
 			<h1 class="mb-2 text-4xl">
-				Keiro Kai means <span
-					class="block w-fit rounded-sm bg-primary p-1 text-primary-foreground sm:inline"
-					>Respect for the Aged</span
-				>
+				Keiro Kai means <span class="block w-fit text-primary sm:inline">Respect for the Aged</span>
 			</h1>
 			<p class="min-w-60">
 				Keiro Kai is our way of honoring the seniors within our community. This special occasion is
@@ -44,7 +47,7 @@
 		</div>
 
 		<div class="my-8 pb-10">
-			<div class="flex h-full items-center text-sm">
+			<div class="mb-2 flex h-full items-center text-sm">
 				<span class="text-4xl">
 					Join us
 					<span class="underline"> January 25th, 2025 at 12PM </span>
