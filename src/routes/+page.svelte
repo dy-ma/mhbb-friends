@@ -1,10 +1,8 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button/index';
 	import * as Accordion from '$lib/components/ui/accordion/index';
-	import { Separator } from '$lib/components/ui/separator/index';
 	import temple from '$lib/images/temple.jpg';
-	import * as Card from '$lib/components/ui/card/index.js';
-	import { AspectRatio } from '$lib/components/ui/aspect-ratio';
+    import ArrowDown from 'lucide-svelte/icons/arrow-down';
 </script>
 
 <main class="mx-auto flex flex-col font-serif">
@@ -23,12 +21,13 @@
 			>
 		</div>
 
-		<Button variant="secondary" href="#details" class="font-semibold">Learn More</Button>
+		<Button variant="secondary" href="#details" class="font-semibold">Learn More<ArrowDown/></Button>
+
 		<div id="details"></div>
 	</div>
 
-	<div class="max-w-3xl self-center p-4">
-		<div class="py-10">
+	<div class="max-w-3xl self-center">
+		<div class="pt-10">
 			<h1 class="mb-2 text-4xl">
 				Keiro Kai means <span class="rounded-sm bg-primary p-1 text-primary-foreground block sm:inline w-fit"
 					>Respect for the Aged</span
@@ -41,7 +40,7 @@
 			</p>
 		</div>
 
-		<div class="my-8">
+		<div class="my-8 pb-10">
 			<div class="flex h-full items-center text-sm">
 				<span class="text-4xl">
 					Join us
@@ -63,8 +62,8 @@
 				</li>
 			</ul>
 		</div>
+        
 		<h1 id="directions" class="text-4xl">How to Attend</h1>
-
 		<Accordion.Root type="single" class="mb-6">
 			<Accordion.Item value="item-1">
 				<Accordion.Trigger>When is the event?</Accordion.Trigger>
