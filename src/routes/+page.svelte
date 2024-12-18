@@ -4,7 +4,6 @@
 	import temple from '$lib/images/temple.jpg';
 	import ArrowDown from 'lucide-svelte/icons/arrow-down';
 	import logo from '$lib/images/logo-primary.svg';
-	import snake from '$lib/images/snake.png'
 </script>
 
 <main class="mx-auto flex flex-col font-serif">
